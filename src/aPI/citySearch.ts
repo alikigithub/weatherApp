@@ -5,7 +5,7 @@ export const getcity = async (city: string) => {
     const cityData = await axios.get(
       `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=3&appid=${key}`
     );
-    console.log(cityData);
+
     return cityData.data;
   } catch (error) {
     throw new Error(`Failed to fetch city data,${error}`);

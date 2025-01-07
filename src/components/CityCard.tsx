@@ -56,7 +56,6 @@ const CityCard = () => {
       case "50n":
         return "13n";
       default:
-        console.log(value);
         return value;
     }
   };

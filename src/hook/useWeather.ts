@@ -12,7 +12,6 @@ const useWeather = () => {
 
   useEffect(() => {
     if (latitude && longitutde) {
-      console.log(latitude, longitutde);
       dispatch(fetchWeatherDetail({ lat: latitude, long: longitutde }));
     }
   }, [latitude, longitutde, dispatch]);

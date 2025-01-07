@@ -14,12 +14,9 @@ export const weatherDataFormat = (weatherData: weatherDetails) => {
     "Friday",
     "Saturday",
   ];
-  console.log(weatherData.city.name);
   const nextDays: { [key: string]: forcast } = {};
   weatherData.list.forEach((data) => {
-    console.log(data);
     const date = new Date(data.dt * 1000);
-    console.log(date);
     const day = daysOfWeek[date.getDay()];
 
     const timespam = date.getUTCHours();
@@ -33,9 +30,7 @@ export const weatherDataFormat = (weatherData: weatherDetails) => {
       };
     }
   });
-  console.log(nextDays);
   const weather: weatherEntry = weatherData.list[0];
-  console.log(weather.clouds.all);
   const todayWeather: todayForcast = {
     feelslike: weather.main.feels_like,
     rain: weather.clouds.all,

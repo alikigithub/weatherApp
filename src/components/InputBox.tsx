@@ -28,7 +28,6 @@ const Inputbox = () => {
     dropDown: boolean;
   } = useCitySearch();
 
-  console.log(cityName);
   const getCityValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.trim();
     dispatch(inputData(value));

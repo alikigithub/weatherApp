@@ -66,7 +66,6 @@ const citySearch = createSlice({
         state.status = "pending";
       })
       .addCase(fetchCityData.fulfilled, (state, action) => {
-        console.log(action);
         state.citylist = action.payload;
         state.status = "fullfilled";
       })

@@ -8,7 +8,6 @@ export const fetchWeatherDetail = createAsyncThunk(
     try {
       const weatherData: weatherDetails = await getCityDetail(lat, long);
 
-      console.log(weatherData);
       return weatherData;
     } catch (error) {
       throw new Error(`Api Failed to Fetch, ${error}`);
