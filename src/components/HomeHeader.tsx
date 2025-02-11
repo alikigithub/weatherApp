@@ -10,7 +10,7 @@ const HomeHeader = () => {
           Welcome to <span className="md:text-bluelight">Weather App</span>
         </h1>
         <p className="text-BaseGray mb-10 text-[14px]">
-          Chose a location to see weatasher Forcastaaa
+          Chose a location to see weatasher Forcast
         </p>
       </section>
     </div>
