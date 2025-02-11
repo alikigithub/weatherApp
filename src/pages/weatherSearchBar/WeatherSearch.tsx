@@ -1,10 +1,10 @@
 import Inputbox from "../../components/InputBox";
-import Logo from "../../components/HomeHeader";
+import HomeHeader from "../../components/HomeHeader";
 
 const WeatherSearch = () => {
   return (
     <div className="h-screen bg-bground w-full flex  flex-col items-center">
-      <Logo />
+      <HomeHeader />
       <Inputbox />
     </div>
   );
